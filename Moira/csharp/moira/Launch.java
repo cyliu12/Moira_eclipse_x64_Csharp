@@ -43,7 +43,7 @@ public class Launch {
 		case 3:
 			break;		
 		}
-		Log.c("DllID = " + MRI.DllID);
+		Log.c("DllID = " + MRI.getDllID());
 	}
 
 	public static void main(String[] args) {

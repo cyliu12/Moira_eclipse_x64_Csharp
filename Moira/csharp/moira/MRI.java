@@ -11,7 +11,10 @@ import org.athomeprojects.base.City;
 import org.athomeprojects.base.Resource;
 
 public class MRI {
-	static public final String DllID = "MRI_x64_c#_1.00.240522.0";
+	//static public final String DllID = "MRI_x64_c#_1.00.240522.0";  使用靜態變數，經IKVM -> Visua Studio後的成品，會讀出固定數值，手動變換dll時無法反應出真正dll版號
+	static public String getDllID() {
+		return "MRI_x64_c#_1.00.240522.3";
+	}
 	static public final int SUN = ChartData.SUN; // 0
 	static public final int MOON = ChartData.MOON; // 1
 	static public final int VENUS = ChartData.VENUS; // 2
@@ -79,9 +82,7 @@ public class MRI {
 	public PublicChartData result = new PublicChartData();
 	public Hashtable shen_sha_table_b, shen_sha_table_n;
 
-	public String getDllID() {
-		return DllID;
-	}
+
 	
 	public void setLocation(String countryName, String cityName, String zoneName) {
 		country = countryName;
