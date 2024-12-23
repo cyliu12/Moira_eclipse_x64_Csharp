@@ -20,7 +20,7 @@ public class Launch {
 		Log.c(Arrays.toString(city_list));
 		String[] zone_list = Moira.mri.getZoneList();
 		Log.c(Arrays.toString(zone_list));		
-		Moira.mri.setLocation(country_list[33], city_list[6], zone_list[312]); // 台灣，台南，Asia/Taipei
+		Moira.mri.setLocation(country_list[33], city_list[6], zone_list[311]); // 台灣，台南，Asia/Taipei
 		Moira.run();
 		ShowData();
 		Moira.disposeMoira();
@@ -39,6 +39,11 @@ public class Launch {
 		case 2:
 			Log.c(Moira.mri.getStarShin("火", ""));
 			Log.c(Moira.mri.getStarShin("火", "", true));
+			Log.c(Moira.mri.result.life_sign_pos);
+			Log.c(Moira.mri.result.self_sign_pos);
+			Log.c(Moira.mri.result.gauquelin_sign_pos[0]);
+			Log.c(Moira.mri.result.gauquelin_sign_pos[1]);
+			
 			break;
 		case 3:
 			break;		
@@ -67,6 +72,7 @@ public class Launch {
 					+ Moira.mri.getZone());
 			Log.cf("Birth      : " + Moira.mri.getBirthString());
 			Log.cf("Birth(陰曆) : " + Moira.mri.getBirthString(true));
+			Log.cf("八字: " + Arrays.toString(Moira.mri.getEightWords()));	
 			Log.cf("Now        : " + Moira.mri.getNowString());
 			Log.cf("Now(陰曆)   : " + Moira.mri.getNowString(true));
 			Log.cf("Birth 未: " + Moira.mri.getKiShinNames("未"));
@@ -93,7 +99,7 @@ public class Launch {
 			Log.cf("MRI.getPlanetPos  : " + Moira.mri.getPlanetPos(planet));
 			Log.cf("MRI.getPlanetPosString  : " + Moira.mri.getPlanetPosString(planet));			
 			Log.cf(Moira.mri.getSolarTermsPage(true));
-			Log.cf(Arrays.toString(Moira.mri.getSolarTermsInt(true)[0]));			
+			Log.cf("getSolarTermsInt: " + Arrays.toString(Moira.mri.getSolarTermsInt(true)[0]));			
 			Log.cf("getFortuneScopes: " + Arrays.toString(Moira.mri.getFortuneScopes()));
 			Log.cf("getNowYearPos: " + Arrays.toString(Moira.mri.getNowYearPos()));
 			Log.cf("getNowYearPosString: " + Arrays.toString(Moira.mri.getNowYearPosString()));

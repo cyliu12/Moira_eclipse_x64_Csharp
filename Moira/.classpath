@@ -19,5 +19,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.equinox.common"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.jface"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.swt"/>
-	<classpathentry kind="output" path=""/>
+	<classpathentry exported="true" kind="lib" path="/Moira_eclipse_x64_csharp/Moira"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>

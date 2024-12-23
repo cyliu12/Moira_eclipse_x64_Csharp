@@ -9440,7 +9440,7 @@ public class ChartData {
 		Moira.mri.result.alt_pole_data_offset = alt_pole_data_offset;
 		Moira.mri.result.alt_year_data = alt_year_data;
 		Moira.mri.result.angle_offset = angle_offset;
-		// Moira.mri.result.ASC=ASC;
+		//Moira.mri.result.ASC=ASC;
 		Moira.mri.result.aspects_color = aspects_color;
 		Moira.mri.result.aspects_degree = aspects_degree;
 		Moira.mri.result.aspects_display = aspects_display;
@@ -9488,7 +9488,7 @@ public class ChartData {
 		Moira.mri.result.child_seq = child_seq;
 		Moira.mri.result.chinese_zodiac_signs = chinese_zodiac_signs;
 		// Moira.mri.result.CHIRON=CHIRON;
-		Moira.mri.result.compass_sign_pos = compass_sign_pos;	//��戍摰踹漲
+		Moira.mri.result.compass_sign_pos = compass_sign_pos;	//
 		Moira.mri.result.compass_stellar_names = compass_stellar_names;
 		// Moira.mri.result.CONSTELLATION_MAIN_OFFSET=CONSTELLATION_MAIN_OFFSET;
 		// Moira.mri.result.CONSTELLATION_SUB_OFFSET=CONSTELLATION_SUB_OFFSET;
@@ -9537,10 +9537,10 @@ public class ChartData {
 		// Moira.mri.result.FORTUNE=FORTUNE;
 		Moira.mri.result.full_mountain_main_signs = full_mountain_main_signs;
 		Moira.mri.result.full_mountain_secondary_signs = full_mountain_secondary_signs;
-		Moira.mri.result.full_mountain_signs = full_mountain_signs;
-		Moira.mri.result.full_stellar_signs = full_stellar_signs;
-		Moira.mri.result.full_twelve_signs = full_twelve_signs;
-		Moira.mri.result.full_zodiac = full_zodiac;
+		Moira.mri.result.full_mountain_signs = full_mountain_signs;	//十二山
+		Moira.mri.result.full_stellar_signs = full_stellar_signs;	//二十八宿 全名
+		Moira.mri.result.full_twelve_signs = full_twelve_signs;		//十二宮 全名
+		Moira.mri.result.full_zodiac = full_zodiac;					//黃道十二宮 全名
 		Moira.mri.result.gauquelin_sign_pos = gauquelin_sign_pos;
 		Moira.mri.result.gauquelin_sign_region = gauquelin_sign_region;
 		Moira.mri.result.good_styles = good_styles;

@@ -12,6 +12,7 @@ import org.athomeprojects.base.Resource;
 
 public class MRI {
 	//static public final String DllID = "MRI_x64_c#_1.00.240522.0";  使用靜態變數，經IKVM -> Visua Studio後的成品，會讀出固定數值，手動變換dll時無法反應出真正dll版號
+	//2024/12/23有修改過，沒有實質變動，沒有發布新的DLL
 	static public String getDllID() {
 		return "MRI_x64_c#_1.00.240522.3";
 	}
@@ -1395,4 +1396,5 @@ public class MRI {
 	public String[] getZoneList() {
 		return City.getAllZoneNames();
 	}
+	
 }
